@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>bankmall_admin</title><link href=./static/css/app.327efa0e0d3ba7cdd4c688006d199e9e.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.650bdec3f5cff97bb719.js></script><script type=text/javascript src=./static/js/vendor.09ad94ee959a583f2caa.js></script><script type=text/javascript src=./static/js/app.d58362ca28291737f6d4.js></script></body><script>if (window.HTMLElement) {
+    if (Object.getOwnPropertyNames(HTMLElement.prototype).indexOf('dataset') === -1) {
+      Object.defineProperty(HTMLElement.prototype, 'dataset', {
+        get: function () {
+          var attributes = this.attributes; //获取节点的所有属性
+          var name = [],
+            value = []; //定义两个数组保存属性名和属性值
+          var obj = {}; //定义一个空对象
+          for (var i = 0; i < attributes.length; i++) { //遍历节点的所有属性
+            if (attributes[i].nodeName.slice(0, 5) == 'data-') { //如果属性名的前面5个字符符合"data-"
+              // 取出属性名的"data-"的后面的字符串放入name数组中
+              name.push(attributes[i].nodeName.slice(5));
+              //取出对应的属性值放入value数组中
+              value.push(attributes[i].nodeValue);
+            }
+          }
+          for (var j = 0; j < name.length; j++) { //遍历name和value数组
+            obj[name[j]] = value[j]; //将属性名和属性值保存到obj中
+          }
+          return obj; //返回对象
+        }
+      });
+    }
+  }</script></html>

@@ -1,0 +1,2 @@
+webpackJsonp([1],{"9/AP":function(e,t){},t4H5:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var a={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"parameterManage"},[this._v("积分参数管理")])},staticRenderFns:[]};var r=n("VU/8")({name:"parameterManage"},a,!1,function(e){n("9/AP")},null,null);t.default=r.exports}});
+//# sourceMappingURL=1.20bf1ac060216ba430fc.js.map
